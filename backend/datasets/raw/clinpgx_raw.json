@@ -1,0 +1,84 @@
+{
+  "version": "2026.11",
+  "guideline_source": "Clinical Pharmacogenetics Implementation Consortium (CPIC) & PharmGKB",
+  "records": [
+    {
+      "drug": "Codeine",
+      "gene": "CYP2D6",
+      "evidence_level": "1A",
+      "phenotypes": {
+        "Poor Metabolizer": "Greatly reduced conversion to morphine. Inadequate analgesia. Alternative non-CYP2D6 analgesic strongly recommended.",
+        "Intermediate Metabolizer": "Reduced morphine generation. May exhibit blunted pain relief; monitor response closely.",
+        "Normal Metabolizer": "Expected therapeutic analgesic conversion. Standard label dosing indicated.",
+        "Ultra-Rapid Metabolizer": "Markedly increased conversion to morphine. Severe life-threatening opioid toxicity/respiratory depression risk. AVOID USE."
+      },
+      "source": "CPIC Guideline for Codeine and CYP2D6 (PMID: 24458010)"
+    },
+    {
+      "drug": "Clopidogrel",
+      "gene": "CYP2C19",
+      "evidence_level": "1A",
+      "phenotypes": {
+        "Poor Metabolizer": "Significantly reduced active thiol metabolite generation. Increased risk of stent thrombosis and major adverse cardiovascular events (MACE). Use alternative P2Y12 inhibitor (Prasugrel or Ticagrelor).",
+        "Intermediate Metabolizer": "Sub-therapeutic platelet inhibition. Consider alternative P2Y12 inhibitor.",
+        "Normal Metabolizer": "Normal active metabolite activation and antiplatelet effect. Standard label dosing.",
+        "Ultra-Rapid Metabolizer": "Normal or slightly enhanced platelet inhibition; standard dosing."
+      },
+      "source": "CPIC Guideline for CYP2C19 and Clopidogrel Therapy (PMID: 35147995)"
+    },
+    {
+      "drug": "Warfarin",
+      "gene": "CYP2C9 & VKORC1",
+      "evidence_level": "1A",
+      "phenotypes": {
+        "Poor Metabolizer (CYP2C9 *3/*3, VKORC1 -1639AA)": "Markedly diminished (S)-warfarin clearance and extreme sensitivity. Very high hemorrhage/bleeding risk. Requires 50-80% dose reduction and frequent INR monitoring.",
+        "Intermediate Metabolizer": "Moderate reduction in clearance. Reduce starting dose by 20-40%.",
+        "Normal Metabolizer": "Standard therapeutic dose requirement; standard INR-guided titration."
+      },
+      "source": "CPIC Guideline for Pharmacogenetics-Guided Warfarin Dosing (PMID: 28198005)"
+    },
+    {
+      "drug": "Simvastatin",
+      "gene": "SLCO1B1",
+      "evidence_level": "1A",
+      "phenotypes": {
+        "Poor Function (521CC / *5/*5)": "Impaired hepatic uptake transporter function. Markedly elevated plasma statin exposure. 4-fold to 5-fold higher risk of severe statin-induced myopathy / rhabdomyolysis. Prescribe alternative statin (Pravastatin or Rosuvastatin at low dose) or limit simvastatin dose to \u00e2\u2030\u00a420mg daily.",
+        "Intermediate Function (521TC)": "Moderate increase in systemic statin exposure. Avoid high-dose simvastatin (e.g. 40-80mg).",
+        "Normal Function (521TT)": "Standard hepatic clearance and expected myopathy incidence. Standard label dosing."
+      },
+      "source": "CPIC Guideline for SLCO1B1 and Statin-Induced Myopathy (PMID: 35243689)"
+    },
+    {
+      "drug": "Fluorouracil",
+      "gene": "DPYD",
+      "evidence_level": "1A",
+      "phenotypes": {
+        "Poor Metabolizer (*2A/*2A, *13/*13)": "Complete dihydropyrimidine dehydrogenase (DPD) deficiency. Inability to catabolize 5-FU. Catastrophic, lethal neutropenia, mucositis, and neurotoxicity. CONTRAINDICATED.",
+        "Intermediate Metabolizer (Heterozygous variant)": "Partial DPD deficiency. Reduce initial 5-FU/capecitabine dosage by 50% followed by therapeutic drug monitoring.",
+        "Normal Metabolizer": "Normal DPD enzymatic activity. Full standard dosing."
+      },
+      "source": "CPIC Guideline for Dihydropyrimidine Dehydrogenase Genotype and Fluoropyrimidine Dosing (PMID: 29152729)"
+    },
+    {
+      "drug": "Azathioprine",
+      "gene": "TPMT & NUDT15",
+      "evidence_level": "1A",
+      "phenotypes": {
+        "Poor Metabolizer": "Severely reduced thiopurine S-methyltransferase activity leads to toxic accumulation of active thioguanine nucleotides (TGN). Profound life-threatening bone marrow aplasia and severe myelosuppression. Reduce daily dose by 90% or choose non-thiopurine therapy.",
+        "Intermediate Metabolizer": "Moderately elevated TGN levels. Reduce standard starting dose by 30-50%.",
+        "Normal Metabolizer": "Standard enzymatic conversion. Standard dosing with routine hematologic monitoring."
+      },
+      "source": "CPIC Guideline for Thiopurine Methyltransferase (TPMT) and NUDT15 (PMID: 30447069)"
+    },
+    {
+      "drug": "Abacavir",
+      "gene": "HLA-B",
+      "evidence_level": "1A",
+      "phenotypes": {
+        "HLA-B*57:01 Positive": "High risk of life-threatening hypersensitivity reaction (fever, rash, GI distress, bronchospasm). CONTRAINDICATED. Must never be administered or re-challenged.",
+        "HLA-B*57:01 Negative": "Low risk of HLA-associated hypersensitivity. Use per standard prescribing protocol."
+      },
+      "source": "CPIC Guideline for HLA-B Genotype and Abacavir Hypersensitivity (PMID: 24566945)"
+    }
+  ]
+}

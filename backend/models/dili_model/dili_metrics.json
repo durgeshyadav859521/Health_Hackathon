@@ -1,0 +1,186 @@
+{
+  "best_model": "XGBoost",
+  "dataset": "FDA DILIrank 2.0 (NCTR / LTKB)",
+  "total_records": 63,
+  "train_samples": 50,
+  "test_samples": 13,
+  "classes": {
+    "0": "v-No-DILI-concern (Class 0: Verified Negative Control)",
+    "1": "v-Less-DILI-concern (Class 1: Low-to-Moderate Concern / Reversible)",
+    "2": "v-Most-DILI-concern (Class 2: Severe Concern / Boxed Warnings / Failure)"
+  },
+  "metrics": {
+    "accuracy": 0.6153846153846154,
+    "precision": 0.6615384615384615,
+    "recall": 0.6153846153846154,
+    "f1_score": 0.6324786324786325,
+    "roc_auc": 0.7467948717948717,
+    "confusion_matrix": [
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        4
+      ]
+    ],
+    "features": [
+      "mw",
+      "logp",
+      "tpsa",
+      "hbd",
+      "hba",
+      "rot_bonds",
+      "daily_dose_mg",
+      "reactive_metabolite",
+      "rule_of_two",
+      "log_dose",
+      "logp_tpsa_ratio",
+      "tpsa_mw_ratio",
+      "hb_total"
+    ]
+  },
+  "all_model_comparisons": {
+    "LogisticRegression": {
+      "accuracy": 0.5384615384615384,
+      "precision": 0.6538461538461539,
+      "recall": 0.5384615384615384,
+      "f1_score": 0.5448717948717948,
+      "roc_auc": 0.6196581196581197,
+      "confusion_matrix": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "features": [
+        "mw",
+        "logp",
+        "tpsa",
+        "hbd",
+        "hba",
+        "rot_bonds",
+        "daily_dose_mg",
+        "reactive_metabolite",
+        "rule_of_two",
+        "log_dose",
+        "logp_tpsa_ratio",
+        "tpsa_mw_ratio",
+        "hb_total"
+      ]
+    },
+    "RandomForest": {
+      "accuracy": 0.6153846153846154,
+      "precision": 0.6703296703296704,
+      "recall": 0.6153846153846154,
+      "f1_score": 0.6122766122766122,
+      "roc_auc": 0.748397435897436,
+      "confusion_matrix": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "features": [
+        "mw",
+        "logp",
+        "tpsa",
+        "hbd",
+        "hba",
+        "rot_bonds",
+        "daily_dose_mg",
+        "reactive_metabolite",
+        "rule_of_two",
+        "log_dose",
+        "logp_tpsa_ratio",
+        "tpsa_mw_ratio",
+        "hb_total"
+      ]
+    },
+    "XGBoost": {
+      "accuracy": 0.6153846153846154,
+      "precision": 0.6615384615384615,
+      "recall": 0.6153846153846154,
+      "f1_score": 0.6324786324786325,
+      "roc_auc": 0.7467948717948717,
+      "confusion_matrix": [
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          4
+        ]
+      ],
+      "features": [
+        "mw",
+        "logp",
+        "tpsa",
+        "hbd",
+        "hba",
+        "rot_bonds",
+        "daily_dose_mg",
+        "reactive_metabolite",
+        "rule_of_two",
+        "log_dose",
+        "logp_tpsa_ratio",
+        "tpsa_mw_ratio",
+        "hb_total"
+      ]
+    }
+  },
+  "trained_at": "2026-11-24T19:22:39.490209",
+  "features": [
+    "mw",
+    "logp",
+    "tpsa",
+    "hbd",
+    "hba",
+    "rot_bonds",
+    "daily_dose_mg",
+    "reactive_metabolite",
+    "rule_of_two",
+    "log_dose",
+    "logp_tpsa_ratio",
+    "tpsa_mw_ratio",
+    "hb_total"
+  ]
+}

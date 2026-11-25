@@ -1,0 +1,28 @@
+{
+  "dili_model": {
+    "name": "FDA DILIrank 2.0 XGBoost Classifier",
+    "algorithm": "XGBoost",
+    "version": "2.0.1",
+    "status": "Trained & Validated",
+    "mode": "REAL_MODEL_MODE",
+    "dataset_name": "FDA DILIrank 2.0",
+    "dataset_version": "2.0 Official Benchmark",
+    "record_count": 63,
+    "train_split": "80%",
+    "test_split": "20%",
+    "accuracy": 0.6153846153846154,
+    "f1_score": 0.6324786324786325,
+    "roc_auc": 0.7467948717948717,
+    "last_trained": "2026-11-24T19:22:39.494211"
+  },
+  "lincs_model": {
+    "name": "LINCS L1000 Biological Response & PCA Clustering Engine",
+    "version": "1.2.0",
+    "status": "Trained & Validated",
+    "mode": "REAL_MODEL_MODE",
+    "dataset_name": "LINCS L1000 Phase II",
+    "landmark_genes_count": 10,
+    "variance_explained_3pc": 0.9798668500732695,
+    "last_trained": "2026-11-24T19:24:06.257696"
+  }
+}

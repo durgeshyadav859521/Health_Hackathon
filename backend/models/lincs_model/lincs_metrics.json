@@ -1,0 +1,69 @@
+{
+  "dataset": "LINCS L1000 Experimental Gene Perturbation",
+  "landmark_genes": [
+    "TP53",
+    "CASP3",
+    "CDKN1A",
+    "TNF",
+    "HMOX1",
+    "CYP3A4",
+    "SOD1",
+    "AKT1",
+    "MTOR",
+    "IL6"
+  ],
+  "pca_variance_explained": [
+    0.9167889559630275,
+    0.042424393430586335,
+    0.020653500679655663
+  ],
+  "total_experiments": 22,
+  "cluster_profiles": {
+    "0": {
+      "name": "Quiescent / Homeostatic (Minimal perturbation across landmark genes)",
+      "centroid": {
+        "TP53": 2.0385714285714283,
+        "CASP3": 2.4414285714285713,
+        "CDKN1A": 2.6571428571428575,
+        "TNF": 1.6142857142857143,
+        "HMOX1": 3.0857142857142854,
+        "CYP3A4": -2.228571428571428,
+        "SOD1": -1.7714285714285714,
+        "AKT1": -1.5642857142857145,
+        "MTOR": -1.2285714285714286,
+        "IL6": 1.7142857142857144
+      }
+    },
+    "1": {
+      "name": "Anti-Inflammatory / Metabolic (Downregulated TNF/IL6, modest kinase shift)",
+      "centroid": {
+        "TP53": 0.23583333333333334,
+        "CASP3": 0.3008333333333333,
+        "CDKN1A": 0.4950000000000001,
+        "TNF": -0.4608333333333332,
+        "HMOX1": 0.4733333333333334,
+        "CYP3A4": 0.18166666666666675,
+        "SOD1": 0.1891666666666666,
+        "AKT1": -0.21416666666666673,
+        "MTOR": -0.25166666666666665,
+        "IL6": -0.5333333333333332
+      }
+    },
+    "2": {
+      "name": "Severe Cytotoxic / Apoptotic Stress (Upregulated TP53, CASP3, HMOX1, marked down-regulation of protective enzymes)",
+      "centroid": {
+        "TP53": 0.7566666666666666,
+        "CASP3": 0.6333333333333333,
+        "CDKN1A": 0.95,
+        "TNF": 0.5166666666666666,
+        "HMOX1": 1.3833333333333333,
+        "CYP3A4": -0.6,
+        "SOD1": -0.33333333333333337,
+        "AKT1": -0.31666666666666676,
+        "MTOR": -0.23333333333333334,
+        "IL6": 0.5
+      }
+    }
+  },
+  "trained_at": "2026-11-24T19:24:06.186691"
+}

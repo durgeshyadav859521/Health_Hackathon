@@ -1,0 +1,81 @@
+{
+  "datasets": [
+    {
+      "id": "pubchem",
+      "name": "PubChem Compound & BioAssay Database",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "provider": "National Center for Biotechnology Information (NCBI / NIH)",
+      "version": "2026.11 Live REST PUG API",
+      "purpose": "Drug identification, chemical structure, 2D renderings, molecular weight, XLogP, TPSA, hydrogen bonding, and canonical SMILES.",
+      "record_count": "115,000,000+ compounds",
+      "usage": "Provides foundational physicochemical descriptors to connect molecules across biological and clinical datasets.",
+      "caveats": "Chemical descriptors represent isolated molecular properties and do not account for individual patient metabolic phenotypes without integrated modeling."
+    },
+    {
+      "id": "openfda_label",
+      "name": "openFDA Human Prescription Drug Labels",
+      "source_url": "https://open.fda.gov/apis/drug/label/",
+      "provider": "U.S. Food and Drug Administration (FDA)",
+      "version": "Structured Product Labeling (SPL) API 2026",
+      "purpose": "Official regulatory warnings, boxed warnings, indications, contraindications, and mechanisms of action.",
+      "record_count": "150,000+ drug labels",
+      "usage": "Scientific and regulatory reference retrieval. Used to verify indications, warnings, and known risks.",
+      "caveats": "Label text is qualitative regulatory documentation; it is not a direct quantitative prediction of individualized response probability."
+    },
+    {
+      "id": "dilirank",
+      "name": "FDA Drug-Induced Liver Injury Rank (DILIrank 2.0)",
+      "source_url": "https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-20-dataset",
+      "provider": "FDA National Center for Toxicological Research (NCTR / LTKB)",
+      "version": "2.0 Official LTKB Benchmark",
+      "purpose": "Standard benchmark for drug-induced liver injury classification (v-Most-DILI-concern, v-Less-DILI-concern, v-No-DILI-concern).",
+      "record_count": "1,036 verified pharmaceutical agents",
+      "usage": "Primary supervised machine learning dataset for hepatic liability classification with SHAP feature explainability.",
+      "caveats": "Classification indicates aggregate pharmacological/regulatory hepatotoxicity concern, not an individual patient's absolute diagnostic risk."
+    },
+    {
+      "id": "lincs_l1000",
+      "name": "LINCS L1000 Gene Expression Perturbation Compendium",
+      "source_url": "https://lincsproject.org/",
+      "provider": "NIH Library of Integrated Network-Based Cellular Signatures (LINCS)",
+      "version": "Phase II Landmark Subset",
+      "purpose": "Experimental transcriptional changes (Z-scores) in response to chemical perturbagens across varied cell lines, doses, and exposure times.",
+      "record_count": "Benchmark subset of 978 landmark genes across key cell lines (HEPG2, A549, MCF7, PC3)",
+      "usage": "Predicting multi-target gene modulation, cellular stress, DNA damage, and apoptotic biological pathway responses.",
+      "caveats": "Cell-line in-vitro assays reflect cellular transcriptional responses and cannot be equated to direct whole-human physiological organ function."
+    },
+    {
+      "id": "clinpgx",
+      "name": "ClinPGx / PharmGKB Pharmacogenomic Knowledgebase",
+      "source_url": "https://www.clinpgx.org/",
+      "provider": "Clinical Pharmacogenetics Implementation Consortium (CPIC) & PharmGKB",
+      "version": "2026 Curated Clinical Annotations",
+      "purpose": "Evidence-based gene-drug interactions, CYP450 metabolizer phenotypes (PM, IM, NM, UM), and therapeutic dosage guidance.",
+      "record_count": "Curated CPIC Level 1A/1B/2A gene-drug pairs",
+      "usage": "Pharmacogenomic rule engine providing variant-specific metabolic liability and personalized clinical recommendations.",
+      "caveats": "Pharmacogenomic annotations represent clinical consensus guidelines; actual patient drug levels depend on organ clearance and drug interactions."
+    },
+    {
+      "id": "faers",
+      "name": "FDA Adverse Event Reporting System (FAERS)",
+      "source_url": "https://open.fda.gov/data/faers/",
+      "provider": "U.S. Food and Drug Administration (FDA)",
+      "version": "FAERS Live Quarterly API",
+      "purpose": "Post-marketing safety surveillance, adverse reaction frequency distributions, and disproportionality metrics (PRR, ROR).",
+      "record_count": "25,000,000+ spontaneous adverse event reports",
+      "usage": "Real-world adverse event signal detection and reporting trend exploration.",
+      "caveats": "FAERS is a spontaneous voluntary reporting database subject to under-reporting, notoriety bias, and confounding. Report frequency does NOT establish causal risk."
+    },
+    {
+      "id": "mimic_iv",
+      "name": "MIMIC-IV Clinical Database (Optional / Credentialed Module)",
+      "source_url": "https://physionet.org/content/mimiciv/3.1/",
+      "provider": "MIT Laboratory for Computational Physiology / Beth Israel Deaconess Medical Center",
+      "version": "v3.1 (Credentialed Access Only)",
+      "purpose": "De-identified real-world clinical records, lab measurements, medication administrations, and hospital outcomes.",
+      "record_count": "Credentialed research cohort",
+      "usage": "Exploratory retrospective clinical outcome validation.",
+      "caveats": "Requires PhysioNet credentialing, CITI human subjects training, and Data Use Agreements. The platform functions autonomously without MIMIC-IV dependence."
+    }
+  ]
+}

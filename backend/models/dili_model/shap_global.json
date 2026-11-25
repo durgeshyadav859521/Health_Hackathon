@@ -1,0 +1,84 @@
+{
+  "global_feature_importance": [
+    {
+      "feature": "reactive_metabolite",
+      "display_name": "Reactive Metabolite Formation",
+      "importance": 1.054921265599615
+    },
+    {
+      "feature": "logp",
+      "display_name": "Lipophilicity (XLogP)",
+      "importance": 0.41153871545923126
+    },
+    {
+      "feature": "daily_dose_mg",
+      "display_name": "Daily Exposure Dose (mg)",
+      "importance": 0.2739044130180313
+    },
+    {
+      "feature": "mw",
+      "display_name": "Molecular Weight (g/mol)",
+      "importance": 0.25733013104867697
+    },
+    {
+      "feature": "logp_tpsa_ratio",
+      "display_name": "Lipophilicity / Polar Surface Ratio",
+      "importance": 0.11594187016973923
+    },
+    {
+      "feature": "rot_bonds",
+      "display_name": "Rotatable Bonds",
+      "importance": 0.11457835010140185
+    },
+    {
+      "feature": "hba",
+      "display_name": "Hydrogen Bond Acceptors",
+      "importance": 0.09521501264527461
+    },
+    {
+      "feature": "hbd",
+      "display_name": "Hydrogen Bond Donors",
+      "importance": 0.0753376565581211
+    },
+    {
+      "feature": "tpsa",
+      "display_name": "Topological Polar Surface Area (\u00c3\u2026\u00c2\u00b2)",
+      "importance": 0.062199662268309426
+    },
+    {
+      "feature": "tpsa_mw_ratio",
+      "display_name": "Polar Surface Fraction of Mass",
+      "importance": 0.06127677086339561
+    },
+    {
+      "feature": "hb_total",
+      "display_name": "Total Hydrogen Bonding Count",
+      "importance": 0.042511405568218544
+    },
+    {
+      "feature": "rule_of_two",
+      "display_name": "FDA LTKB Rule of 2 (Dose \u00e2\u2030\u00a5 100mg & LogP \u00e2\u2030\u00a5 3)",
+      "importance": 0.004305257523834248
+    },
+    {
+      "feature": "log_dose",
+      "display_name": "Log Daily Dose Exposure",
+      "importance": 0.0
+    }
+  ],
+  "features": [
+    "mw",
+    "logp",
+    "tpsa",
+    "hbd",
+    "hba",
+    "rot_bonds",
+    "daily_dose_mg",
+    "reactive_metabolite",
+    "rule_of_two",
+    "log_dose",
+    "logp_tpsa_ratio",
+    "tpsa_mw_ratio",
+    "hb_total"
+  ]
+}

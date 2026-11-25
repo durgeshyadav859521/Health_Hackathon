@@ -1,0 +1,40 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+
+# Python caches
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# OS & Environment
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+.env
+.env.local
+
+# Generated PDFs (keep folder via .gitkeep)
+generated_reports/*.pdf
+!generated_reports/.gitkeep
